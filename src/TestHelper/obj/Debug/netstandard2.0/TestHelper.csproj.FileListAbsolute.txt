@@ -1,0 +1,10 @@
+F:\HOC_TAP\DO_AN\Projects\Main\BackEnd\AbpModules\AspNetCoreWebHooks\src\TestHelper\bin\Debug\netstandard2.0\TestHelper.deps.json
+F:\HOC_TAP\DO_AN\Projects\Main\BackEnd\AbpModules\AspNetCoreWebHooks\src\TestHelper\bin\Debug\netstandard2.0\TestHelper.dll
+F:\HOC_TAP\DO_AN\Projects\Main\BackEnd\AbpModules\AspNetCoreWebHooks\src\TestHelper\bin\Debug\netstandard2.0\TestHelper.pdb
+F:\HOC_TAP\DO_AN\Projects\Main\BackEnd\AbpModules\AspNetCoreWebHooks\src\TestHelper\obj\Debug\netstandard2.0\TestHelper.csproj.AssemblyReference.cache
+F:\HOC_TAP\DO_AN\Projects\Main\BackEnd\AbpModules\AspNetCoreWebHooks\src\TestHelper\obj\Debug\netstandard2.0\TestHelper.GeneratedMSBuildEditorConfig.editorconfig
+F:\HOC_TAP\DO_AN\Projects\Main\BackEnd\AbpModules\AspNetCoreWebHooks\src\TestHelper\obj\Debug\netstandard2.0\TestHelper.AssemblyInfoInputs.cache
+F:\HOC_TAP\DO_AN\Projects\Main\BackEnd\AbpModules\AspNetCoreWebHooks\src\TestHelper\obj\Debug\netstandard2.0\TestHelper.AssemblyInfo.cs
+F:\HOC_TAP\DO_AN\Projects\Main\BackEnd\AbpModules\AspNetCoreWebHooks\src\TestHelper\obj\Debug\netstandard2.0\TestHelper.csproj.CoreCompileInputs.cache
+F:\HOC_TAP\DO_AN\Projects\Main\BackEnd\AbpModules\AspNetCoreWebHooks\src\TestHelper\obj\Debug\netstandard2.0\TestHelper.dll
+F:\HOC_TAP\DO_AN\Projects\Main\BackEnd\AbpModules\AspNetCoreWebHooks\src\TestHelper\obj\Debug\netstandard2.0\TestHelper.pdb

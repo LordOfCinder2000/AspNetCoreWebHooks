@@ -3,9 +3,43 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F67820BF-6F51-46BB-86F1-7E090897EC58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AspNetCore.WebHooks.Receivers", "src\Microsoft.AspNetCore.WebHooks.Receivers\Microsoft.AspNetCore.WebHooks.Receivers.csproj", "{35BFF432-F6B6-4849-9314-86C6AB579897}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{CCD4AC3C-ECBF-4FBF-9811-770DA0A3CAD8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{F56E65DD-11BF-4B89-A9BD-B2CCDBE12240}"
+	ProjectSection(SolutionItems) = preProject
+		src\shared\Utilities\ObjectPathUtilities.cs = src\shared\Utilities\ObjectPathUtilities.cs
+		src\shared\Utilities\TrimmingTokenizer.cs = src\shared\Utilities\TrimmingTokenizer.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHelper", "src\TestHelper\TestHelper.csproj", "{F5ADFA3F-CA5A-44D5-A807-420103900887}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35BFF432-F6B6-4849-9314-86C6AB579897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35BFF432-F6B6-4849-9314-86C6AB579897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35BFF432-F6B6-4849-9314-86C6AB579897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35BFF432-F6B6-4849-9314-86C6AB579897}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5ADFA3F-CA5A-44D5-A807-420103900887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5ADFA3F-CA5A-44D5-A807-420103900887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5ADFA3F-CA5A-44D5-A807-420103900887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5ADFA3F-CA5A-44D5-A807-420103900887}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35BFF432-F6B6-4849-9314-86C6AB579897} = {F67820BF-6F51-46BB-86F1-7E090897EC58}
+		{CCD4AC3C-ECBF-4FBF-9811-770DA0A3CAD8} = {F67820BF-6F51-46BB-86F1-7E090897EC58}
+		{F56E65DD-11BF-4B89-A9BD-B2CCDBE12240} = {CCD4AC3C-ECBF-4FBF-9811-770DA0A3CAD8}
+		{F5ADFA3F-CA5A-44D5-A807-420103900887} = {F67820BF-6F51-46BB-86F1-7E090897EC58}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DFA2C475-42ED-4642-AB9C-09663AE71DA6}
