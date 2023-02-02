@@ -4,8 +4,8 @@
 		<PackageTags>aspnetcore;webhook;receiver;xsolla</PackageTags>
 		<PackageIcon>dotnet-package-icon.jpg</PackageIcon>
 		<RepositoryUrl>https://github.com/LordOfCinder2000/AspNetCoreWebHooks</RepositoryUrl>
-		<!--<TargetFramework>netstandard2.0</TargetFramework>-->
-		<!--<RootNamespace>Microsoft.AspNetCore.WebHooks</RootNamespace>-->
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>Microsoft.AspNetCore.WebHooks</RootNamespace>
 	</PropertyGroup>
 	<ItemGroup>
 	  <None Include="C:\Users\Admin\Desktop\dotnet-package-icon.jpg">
@@ -15,9 +15,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.AspNetCore.Mvc.Formatters.Json" Version="$(MicrosoftAspNetCoreMvcFormattersJsonPackageVersion)" />
-		<PackageReference Include="Microsoft.AspNetCore.Http" Version="$(MicrosoftAspNetCoreHttpPackageVersion)" />
-		<PackageReference Include="System.Security.Cryptography.X509Certificates" Version="$(SystemSecurityCryptographyX509CertificatesPackageVersion)" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Formatters.Json" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+		<PackageReference Include="System.Security.Cryptography.X509Certificates" Version="4.3.2" />
 		<PackageReference Include="System.Text.Encodings.Web" Version="7.0.0" />
 		<ProjectReference Include="..\Microsoft.AspNetCore.WebHooks.Receivers\Microsoft.AspNetCore.WebHooks.Receivers.csproj" />
 	</ItemGroup>
