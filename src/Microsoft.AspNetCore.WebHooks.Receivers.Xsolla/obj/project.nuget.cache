@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+tkai0uZoL5A/MfiDbkz1/nWxnrBgg6U1g7OnJmsRuYhvpdbUvThPeUVhuDtqBMMzqn3Qvgh8FtEREOslSy1lw==",
+  "dgSpecHash": "HYDUQXZzMqkfr0jntgb24Z+Cx6CgRWtqUASJhs5aQfjU2EJUzzBwljYSDD9EbSeLGIemcWifg0fQh6885iavDg==",
   "success": true,
   "projectFilePath": "F:\\HOC_TAP\\DO_AN\\Projects\\Main\\BackEnd\\AbpModules\\AspNetCoreWebHooks\\src\\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla\\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla.csproj",
   "expectedPackageFiles": [
