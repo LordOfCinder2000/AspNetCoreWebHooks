@@ -1,3 +1,3 @@
 is_global = true
-build_property.RootNamespace = Microsoft.AspNetCore.WebHooks.Receivers
+build_property.RootNamespace = Microsoft.AspNetCore.WebHooks
 build_property.ProjectDir = F:\HOC_TAP\DO_AN\Projects\Main\BackEnd\AbpModules\AspNetCoreWebHooks\src\Microsoft.AspNetCore.WebHooks.Receivers\

@@ -1,8 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<Description>ASP.NET Core Xsolla WebHooks infrastructure. Contains the XsollaWebHookAttribute class and AddXsollaWebHooks method.</Description>
 		<PackageTags>aspnetcore;webhook;receiver;xsolla</PackageTags>
-		<TargetFramework>netstandard2.0</TargetFramework>
+		<!--<TargetFramework>netstandard2.0</TargetFramework>-->
+		<!--<RootNamespace>Microsoft.AspNetCore.WebHooks</RootNamespace>-->
 	</PropertyGroup>
 
 	<ItemGroup>

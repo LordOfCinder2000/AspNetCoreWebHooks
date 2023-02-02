@@ -11,5 +11,5 @@ F:\HOC_TAP\DO_AN\Projects\Main\BackEnd\AbpModules\AspNetCoreWebHooks\src\Microso
 F:\HOC_TAP\DO_AN\Projects\Main\BackEnd\AbpModules\AspNetCoreWebHooks\src\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla\obj\Debug\netstandard2.0\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla.csproj.CopyComplete
 F:\HOC_TAP\DO_AN\Projects\Main\BackEnd\AbpModules\AspNetCoreWebHooks\src\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla\obj\Debug\netstandard2.0\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla.dll
 F:\HOC_TAP\DO_AN\Projects\Main\BackEnd\AbpModules\AspNetCoreWebHooks\src\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla\obj\Debug\netstandard2.0\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla.pdb
-F:\HOC_TAP\DO_AN\Projects\Main\BackEnd\AbpModules\AspNetCoreWebHooks\src\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla\obj\Debug\netstandard2.0\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla.Properties.Resources.resources
 F:\HOC_TAP\DO_AN\Projects\Main\BackEnd\AbpModules\AspNetCoreWebHooks\src\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla\obj\Debug\netstandard2.0\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla.csproj.GenerateResource.cache
+F:\HOC_TAP\DO_AN\Projects\Main\BackEnd\AbpModules\AspNetCoreWebHooks\src\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla\obj\Debug\netstandard2.0\Microsoft.AspNetCore.WebHooks.Properties.Resources.resources
