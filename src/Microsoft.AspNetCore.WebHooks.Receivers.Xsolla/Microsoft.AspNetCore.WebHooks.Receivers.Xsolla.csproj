@@ -2,8 +2,11 @@
 	<PropertyGroup>
 		<Description>ASP.NET Core Xsolla WebHooks infrastructure. Contains the XsollaWebHookAttribute class and AddXsollaWebHooks method.</Description>
 		<PackageTags>aspnetcore;webhook;receiver;xsolla</PackageTags>
+<<<<<<< HEAD
 		<PackageIcon>dotnet-package-icon.jpg</PackageIcon>
 		<RepositoryUrl>https://github.com/LordOfCinder2000/AspNetCoreWebHooks</RepositoryUrl>
+=======
+>>>>>>> 876d70a0e836a8ab02ca1ab44ba9a64c0f3e5654
 		<!--<TargetFramework>netstandard2.0</TargetFramework>-->
 		<!--<RootNamespace>Microsoft.AspNetCore.WebHooks</RootNamespace>-->
 	</PropertyGroup>
