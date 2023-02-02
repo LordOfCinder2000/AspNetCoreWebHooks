@@ -13,6 +13,9 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Microsoft.AspNetCore.WebHooks.Receivers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("ASP.NET Core WebHooks abstractions and infrastructure components for receivers. C" +
+    "ontains constraints, filters, metadata, and the application models to apply them" +
+    ".")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Microsoft.AspNetCore.WebHooks.Receivers")]

@@ -11,7 +11,6 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.AspNetCore.WebHooks.Properties;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
 namespace Microsoft.AspNetCore.WebHooks.Filters
@@ -31,14 +30,14 @@ namespace Microsoft.AspNetCore.WebHooks.Filters
         /// The <see cref="IConfiguration"/> used to initialize <see cref="Configuration"/>.
         /// </param>
         /// <param name="hostingEnvironment">
-        /// The <see cref="IWebHostEnvironment" /> used to initialize <see cref="HostingEnvironment"/>.
+        /// The <see cref="IHostingEnvironment" /> used to initialize <see cref="HostingEnvironment"/>.
         /// </param>
         /// <param name="loggerFactory">
         /// The <see cref="ILoggerFactory"/> used to initialize <see cref="Logger"/>.
         /// </param>
         protected WebHookSecurityFilter(
             IConfiguration configuration,
-            IWebHostEnvironment hostingEnvironment,
+            IHostingEnvironment hostingEnvironment,
             ILoggerFactory loggerFactory)
         {
             if (configuration == null)
@@ -101,9 +100,9 @@ namespace Microsoft.AspNetCore.WebHooks.Filters
         protected IConfiguration Configuration;
 
         /// <summary>
-        /// Gets the <see cref="IWebHostEnvironment" />.
+        /// Gets the <see cref="IHostingEnvironment" />.
         /// </summary>
-        protected IWebHostEnvironment HostingEnvironment { get; }
+        protected IHostingEnvironment HostingEnvironment { get; }
 
         /// <summary>
         /// Gets an <see cref="ILogger"/> for use in this class and any subclasses.

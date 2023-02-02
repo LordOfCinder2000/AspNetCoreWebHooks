@@ -28,7 +28,7 @@ namespace Microsoft.AspNetCore.WebHooks.ApplicationModels
     {
         private readonly ApiBehaviorOptions _behaviorOptions;
         private readonly IConfiguration _configuration;
-        private readonly IWebHostEnvironment _hostingEnvironment;
+        private readonly IHostingEnvironment _hostingEnvironment;
         private readonly ILoggerFactory _loggerFactory;
         private readonly WebHookMetadataProvider _metadataProvider;
         private readonly ModelStateInvalidFilter _modelStateInvalidFilter;
@@ -40,7 +40,7 @@ namespace Microsoft.AspNetCore.WebHooks.ApplicationModels
         /// </summary>
         /// <param name="behaviorOptions">The <see cref="ApiBehaviorOptions"/> accessor.</param>
         /// <param name="configuration">The <see cref="IConfiguration"/>.</param>
-        /// <param name="hostingEnvironment">The <see cref="IWebHostEnvironment" />.</param>
+        /// <param name="hostingEnvironment">The <see cref="IHostingEnvironment" />.</param>
         /// <param name="loggerFactory">The <see cref="ILoggerFactory"/>.</param>
         /// <param name="metadataProvider">
         /// The <see cref="WebHookMetadataProvider"/> service. Searched for applicable metadata per-request.
@@ -50,7 +50,7 @@ namespace Microsoft.AspNetCore.WebHooks.ApplicationModels
         public WebHookActionModelFilterProvider(
             IOptions<ApiBehaviorOptions> behaviorOptions,
             IConfiguration configuration,
-            IWebHostEnvironment hostingEnvironment,
+            IHostingEnvironment hostingEnvironment,
             ILoggerFactory loggerFactory,
             WebHookMetadataProvider metadataProvider,
             IWebHookRequestReader requestReader,
