@@ -1,10 +1,7 @@
 <Project>
-<<<<<<< HEAD
-  <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory).., '$(MSBuildThisFileName)$(MSBuildThisFileExtension)'))\$(MSBuildThisFileName)$(MSBuildThisFileExtension)" />
-  
-=======
 
->>>>>>> 876d70a0e836a8ab02ca1ab44ba9a64c0f3e5654
+  <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory).., '$(MSBuildThisFileName)$(MSBuildThisFileExtension)'))\$(MSBuildThisFileName)$(MSBuildThisFileExtension)" />
+
   <PropertyGroup>
     <RootNamespace>Microsoft.AspNetCore.WebHooks</RootNamespace>
     <TargetFramework>netstandard2.0</TargetFramework>

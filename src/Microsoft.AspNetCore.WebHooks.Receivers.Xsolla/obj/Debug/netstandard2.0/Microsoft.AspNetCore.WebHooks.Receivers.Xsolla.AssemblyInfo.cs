@@ -17,7 +17,7 @@ using System.Reflection;
     "class and AddXsollaWebHooks method.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Microsoft.AspNetCore.WebHooks.Receivers.Xsolla")]
+[assembly: System.Reflection.AssemblyProductAttribute("Microsoft ASP.NET Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Microsoft.AspNetCore.WebHooks.Receivers.Xsolla")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/LordOfCinder2000/AspNetCoreWebHooks")]
