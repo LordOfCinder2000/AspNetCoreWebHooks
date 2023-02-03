@@ -8,10 +8,10 @@
 		<RootNamespace>Microsoft.AspNetCore.WebHooks</RootNamespace>
 	</PropertyGroup>
 	<ItemGroup>
-	  <None Include="C:\Users\Admin\Desktop\dotnet-package-icon.jpg">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
+	  <None Include="..\..\dotnet-package-icon.jpg">
+	  <Pack>True</Pack>
+	  <PackagePath>\</PackagePath>
+	</None>
 	</ItemGroup>
 
 	<ItemGroup>

@@ -12,7 +12,7 @@
 	<Compile Include="..\shared\Utilities\ObjectPathUtilities.cs">
       <Link>Utilities\ObjectPathUtilities.cs</Link>
     </Compile>
-	<None Include="C:\Users\Admin\Desktop\dotnet-package-icon.jpg">
+	<None Include="..\..\dotnet-package-icon.jpg">
 	  <Pack>True</Pack>
 	  <PackagePath>\</PackagePath>
 	</None>
