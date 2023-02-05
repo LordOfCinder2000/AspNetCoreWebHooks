@@ -61,11 +61,65 @@ namespace Microsoft.AspNetCore.WebHooks.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to test.
+        ///   Looks up a localized string similar to Value cannot be null or empty..
         /// </summary>
-        internal static string test {
+        internal static string General_ArgumentCannotBeNullOrEmpty {
             get {
-                return ResourceManager.GetString("test", resourceCulture);
+                return ResourceManager.GetString("General_ArgumentCannotBeNullOrEmpty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incorrect amount.
+        /// </summary>
+        internal static string Incorrect_Amount {
+            get {
+                return ResourceManager.GetString("Incorrect_Amount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incorrect invoice.
+        /// </summary>
+        internal static string Incorrect_Invoice {
+            get {
+                return ResourceManager.GetString("Incorrect_Invoice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid parameter.
+        /// </summary>
+        internal static string Invalid_Parameter {
+            get {
+                return ResourceManager.GetString("Invalid_Parameter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid signature.
+        /// </summary>
+        internal static string Invalid_Signature {
+            get {
+                return ResourceManager.GetString("Invalid_Signature", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid user.
+        /// </summary>
+        internal static string Invalid_User {
+            get {
+                return ResourceManager.GetString("Invalid_User", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid &apos;{0}&apos; header value. Expecting a value of &apos;{1}={2}&apos;..
+        /// </summary>
+        internal static string SignatureFilter_BadHeaderValue {
+            get {
+                return ResourceManager.GetString("SignatureFilter_BadHeaderValue", resourceCulture);
             }
         }
     }

@@ -15,7 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{
 		src\shared\Utilities\TrimmingTokenizer.cs = src\shared\Utilities\TrimmingTokenizer.cs
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AspNetCore.WebHooks.Receivers.Xsolla", "src\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla.csproj", "{B656799F-716F-4AF4-8A96-CF30DFDECFA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.WebHooks.Receivers.Xsolla", "src\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla.csproj", "{B656799F-716F-4AF4-8A96-CF30DFDECFA7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{52C69EAB-EB98-4ED2-9E40-DA75A2352C26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AspNetCore.WebHooks.Receivers.Xsolla.Test", "test\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla.Test\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla.Test.csproj", "{7087DD07-C9B6-4141-A327-BCDEB2AECB58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +35,10 @@ Global
 		{B656799F-716F-4AF4-8A96-CF30DFDECFA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B656799F-716F-4AF4-8A96-CF30DFDECFA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B656799F-716F-4AF4-8A96-CF30DFDECFA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7087DD07-C9B6-4141-A327-BCDEB2AECB58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7087DD07-C9B6-4141-A327-BCDEB2AECB58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7087DD07-C9B6-4141-A327-BCDEB2AECB58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7087DD07-C9B6-4141-A327-BCDEB2AECB58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,6 +48,7 @@ Global
 		{CCD4AC3C-ECBF-4FBF-9811-770DA0A3CAD8} = {F67820BF-6F51-46BB-86F1-7E090897EC58}
 		{F56E65DD-11BF-4B89-A9BD-B2CCDBE12240} = {CCD4AC3C-ECBF-4FBF-9811-770DA0A3CAD8}
 		{B656799F-716F-4AF4-8A96-CF30DFDECFA7} = {F67820BF-6F51-46BB-86F1-7E090897EC58}
+		{7087DD07-C9B6-4141-A327-BCDEB2AECB58} = {52C69EAB-EB98-4ED2-9E40-DA75A2352C26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DFA2C475-42ED-4642-AB9C-09663AE71DA6}

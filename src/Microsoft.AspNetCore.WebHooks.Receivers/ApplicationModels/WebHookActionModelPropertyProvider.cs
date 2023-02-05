@@ -268,7 +268,15 @@ namespace Microsoft.AspNetCore.WebHooks.ApplicationModels
             if (attribute is IWebHookEventSelectorMetadata eventSelector &&
                 eventSelector.EventName != null)
             {
-                EnsureValidEventMetadata(eventMetadata, receiverName);
+                // Use for both IWebHookEventMetadata and IWebHookEventFromBodyMetadata
+                if (action.Properties.TryGetValue(typeof(IWebHookEventFromBodyMetadata), out var eventFromBodyMetadata))
+                {
+                    if (eventFromBodyMetadata is IWebHookEventFromBodyMetadata)
+                    {
+                        EnsureValidEventMetadataOrEventFromBodyMetadata(eventMetadata, (IWebHookEventFromBodyMetadata)eventFromBodyMetadata, receiverName);
+                    }
+                }
+
                 action.Properties[typeof(IWebHookEventSelectorMetadata)] = eventSelector;
             }
 
@@ -389,14 +397,17 @@ namespace Microsoft.AspNetCore.WebHooks.ApplicationModels
 
         /// <summary>
         /// Ensure given <paramref name="eventMetadata"/> is not <see langword="null"/>. An
-        /// <see cref="IWebHookEventMetadata"/> service is mandatory for receivers with an attribute that implements
+        /// <see cref="IWebHookEventMetadata"/> or <see cref="IWebHookEventFromBodyMetadata"/> service is mandatory for receivers with an attribute that implements
         /// <see cref="IWebHookEventSelectorMetadata"/>.
         /// </summary>
         /// <param name="eventMetadata">
         /// The <paramref name="receiverName"/> receiver's <see cref="IWebHookEventMetadata"/>, if any.
         /// </param>
+        /// /// <param name="eventFromBodyMetadata">
+        /// The <paramref name="receiverName"/> receiver's <see cref="IWebHookEventFromBodyMetadata"/>, if any.
+        /// </param>
         /// <param name="receiverName">The name of an available <see cref="IWebHookReceiver"/>.</param>
-        protected void EnsureValidEventMetadata(IWebHookEventMetadata eventMetadata, string receiverName)
+        protected void EnsureValidEventMetadataOrEventFromBodyMetadata(IWebHookEventMetadata eventMetadata, IWebHookEventFromBodyMetadata eventFromBodyMetadata, string receiverName)
         {
             if (receiverName == null)
             {
@@ -405,15 +416,17 @@ namespace Microsoft.AspNetCore.WebHooks.ApplicationModels
                 return;
             }
 
-            if (eventMetadata == null)
+            if (eventMetadata == null && eventFromBodyMetadata == null)
             {
-                // IWebHookEventMetadata is mandatory when performing action selection using event names.
+                // IWebHookEventMetadata or IWebHookEventFromBodyMetadata is mandatory when performing action selection using event names.
                 var message = string.Format(
                     CultureInfo.CurrentCulture,
                     Resources.PropertyProvider_MissingMetadataServices,
                     receiverName,
                     typeof(IWebHookEventSelectorMetadata),
-                    typeof(IWebHookEventMetadata));
+                    typeof(IWebHookEventMetadata),
+                    typeof(IWebHookEventFromBodyMetadata));
+
                 throw new InvalidOperationException(message);
             }
         }

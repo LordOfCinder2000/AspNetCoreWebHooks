@@ -142,7 +142,7 @@ namespace Microsoft.AspNetCore.WebHooks.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid metadata services found for the &apos;{0}&apos; WebHook receiver. Receivers with attributes implementing &apos;{1}&apos; must also provide a &apos;{2}&apos; service..
+        ///   Looks up a localized string similar to Invalid metadata services found for the &apos;{0}&apos; WebHook receiver. Receivers with attributes implementing &apos;{1}&apos; must also provide a &apos;{2}&apos; or &apos;{3}&apos; service ..
         /// </summary>
         internal static string PropertyProvider_MissingMetadataServices {
             get {

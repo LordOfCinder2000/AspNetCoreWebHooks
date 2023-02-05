@@ -139,6 +139,7 @@ namespace Microsoft.AspNetCore.WebHooks.ApplicationModels
 
             var properties = action.Properties;
             AddEventNameMapperFilter(properties, filters);
+            AddEventNameSelectorFilter(properties, filters);
             AddGetHeadRequestFilter(properties, filters);
             AddPingRequestFilter(properties, filters);
             AddVerifyBodyTypeFilter(properties, filters);
@@ -178,6 +179,28 @@ namespace Microsoft.AspNetCore.WebHooks.ApplicationModels
                 else
                 {
                     filter = new WebHookEventNameMapperFilter(_requestReader, _loggerFactory, _metadataProvider);
+                }
+
+                filters.Add(filter);
+            }
+        }
+
+        private void AddEventNameSelectorFilter(IDictionary<object, object> properties, IList<IFilterMetadata> filters)
+        {
+            if (properties.TryGetValue(typeof(IWebHookEventSelectorMetadata), out var eventSelectorMetadata))
+            {
+                WebHookEventNameSelectorFilter filter;
+                var bodyTypeMetadataObject = properties[typeof(IWebHookBodyTypeMetadataService)];
+                if (bodyTypeMetadataObject is IWebHookBodyTypeMetadataService bodyTypeMetadata)
+                {
+                    filter = new WebHookEventNameSelectorFilter(
+                        _loggerFactory,
+                        bodyTypeMetadata,
+                        (IWebHookEventSelectorMetadata)eventSelectorMetadata);
+                }
+                else
+                {
+                    filter = new WebHookEventNameSelectorFilter(_loggerFactory, _metadataProvider);
                 }
 
                 filters.Add(filter);

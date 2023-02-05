@@ -172,7 +172,11 @@ namespace Microsoft.AspNetCore.WebHooks.ApplicationModels
 
         private void AddEventNamesConstraint(IDictionary<object, object> properties, SelectorModel selector)
         {
-            if (properties.TryGetValue(typeof(IWebHookEventSelectorMetadata), out var eventSourceMetadata))
+            if (
+                !properties.TryGetValue(typeof(IWebHookEventFromBodyMetadata), out _)
+                &&
+                properties.TryGetValue(typeof(IWebHookEventSelectorMetadata), out var eventSourceMetadata)
+            )
             {
                 var eventName = ((IWebHookEventSelectorMetadata)eventSourceMetadata).EventName;
                 if (eventName != null)

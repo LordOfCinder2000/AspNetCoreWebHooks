@@ -117,7 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="test" xml:space="preserve">
-    <value>test</value>
+  <data name="General_ArgumentCannotBeNullOrEmpty" xml:space="preserve">
+    <value>Value cannot be null or empty.</value>
+  </data>
+  <data name="Incorrect_Amount" xml:space="preserve">
+    <value>Incorrect amount</value>
+  </data>
+  <data name="Incorrect_Invoice" xml:space="preserve">
+    <value>Incorrect invoice</value>
+  </data>
+  <data name="Invalid_Parameter" xml:space="preserve">
+    <value>Invalid parameter</value>
+  </data>
+  <data name="Invalid_Signature" xml:space="preserve">
+    <value>Invalid signature</value>
+  </data>
+  <data name="Invalid_User" xml:space="preserve">
+    <value>Invalid user</value>
+  </data>
+  <data name="SignatureFilter_BadHeaderValue" xml:space="preserve">
+    <value>Invalid '{0}' header value. Expecting a value of '{1}={2}'.</value>
   </data>
 </root>
