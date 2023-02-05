@@ -6,7 +6,7 @@ namespace Microsoft.Extensions.DependencyInjection
     [EditorBrowsable(EditorBrowsableState.Never)]
     public static class XsollaMvcCoreBuilderExtensions
     {
-        public static IMvcCoreBuilder AddXsollabWebHooks(this IMvcCoreBuilder builder)
+        public static IMvcCoreBuilder AddXsollaWebHooks(this IMvcCoreBuilder builder)
         {
             if (builder == null)
             {

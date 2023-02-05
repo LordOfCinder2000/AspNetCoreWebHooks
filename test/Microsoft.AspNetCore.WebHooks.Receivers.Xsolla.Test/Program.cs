@@ -13,7 +13,7 @@ public class Program
         // Add services to the container.
 
         //builder.Services.AddControllers();
-        builder.Services.AddMvc().AddNewtonsoftJson().AddXsollabWebHooks();
+        builder.Services.AddMvc().AddNewtonsoftJson().AddXsollaWebHooks();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         //builder.Services.AddEndpointsApiExplorer();
         //builder.Services.AddSwaggerGen();
