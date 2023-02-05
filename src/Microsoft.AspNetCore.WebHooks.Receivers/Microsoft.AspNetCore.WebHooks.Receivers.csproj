@@ -6,7 +6,7 @@
     <PackageIcon>dotnet-package-icon.jpg</PackageIcon>
 	<TargetFramework>netstandard2.0</TargetFramework>
 	<RootNamespace>Microsoft.AspNetCore.WebHooks</RootNamespace>
-	<Version>1.0.4</Version>
+	<Version>1.0.5</Version>
   </PropertyGroup>
 
   <ItemGroup>

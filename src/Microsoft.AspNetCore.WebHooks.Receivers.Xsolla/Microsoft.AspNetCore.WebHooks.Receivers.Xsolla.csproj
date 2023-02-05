@@ -6,7 +6,7 @@
 		<RepositoryUrl>https://github.com/LordOfCinder2000/AspNetCoreWebHooks</RepositoryUrl>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<RootNamespace>Microsoft.AspNetCore.WebHooks</RootNamespace>
-	    <Version>1.0.4</Version>
+	    <Version>1.0.5</Version>
 	</PropertyGroup>
 	<ItemGroup>
 	  <None Include="..\..\dotnet-package-icon.jpg">
