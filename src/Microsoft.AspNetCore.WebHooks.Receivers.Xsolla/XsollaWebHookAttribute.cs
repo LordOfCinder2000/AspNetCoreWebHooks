@@ -7,34 +7,34 @@ using Microsoft.AspNetCore.WebHooks.Properties;
 
 namespace Microsoft.AspNetCore.WebHooks 
 {
-    public class XsollaWebHookAttribute : WebHookAttribute, IWebHookEventSelectorMetadata, IApiResponseMetadataProvider
+    public class XsollaWebHookAttribute : WebHookAttribute, IApiResponseMetadataProvider //, IWebHookEventSelectorMetadata
     {
         private static readonly ProducesAttribute Produces = new ProducesAttribute("application/json");
 
-        private string _eventName;
+        //private string _eventName;
 
         public XsollaWebHookAttribute()
             : base(XsollaConstants.ReceiverName)
         {
         }
 
-        public string EventName
-        {
-            get
-            {
-                return _eventName;
-            }
-            set
-            {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentException(Resources.General_ArgumentCannotBeNullOrEmpty, nameof(value));
-                }
+        //public string EventName
+        //{
+        //    get
+        //    {
+        //        return _eventName;
+        //    }
+        //    set
+        //    {
+        //        if (string.IsNullOrEmpty(value))
+        //        {
+        //            throw new ArgumentException(Resources.General_ArgumentCannotBeNullOrEmpty, nameof(value));
+        //        }
 
-                _eventName = value;
-            }
+        //        _eventName = value;
+        //    }
 
-        }
+        //}
 
         Type IApiResponseMetadataProvider.Type => Produces.Type;
 

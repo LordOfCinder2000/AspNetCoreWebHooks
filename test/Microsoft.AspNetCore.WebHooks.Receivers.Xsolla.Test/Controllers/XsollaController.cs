@@ -1,15 +1,23 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using Microsoft.AspNetCore.WebHooks;
+using Microsoft.Extensions.Options;
 using Newtonsoft.Json.Linq;
 
 namespace XsollaReceiver.Controllers
 {
     public class XsollaController : ControllerBase
     {
-        [XsollaWebHook(EventName = "order_paid")]
-        public async Task<IActionResult> XsollaWebhookHandler([FromBody] JObject data)
+        public XsollaController()
         {
-            var payload = await new StreamReader(HttpContext.Request.Body).ReadToEndAsync();
+        }
+
+
+        [XsollaWebHook]
+        public async Task<IActionResult> XsollaWebhookHandler(string @event, [FromBody] JObject data)
+        {
 
             return Ok();
         }

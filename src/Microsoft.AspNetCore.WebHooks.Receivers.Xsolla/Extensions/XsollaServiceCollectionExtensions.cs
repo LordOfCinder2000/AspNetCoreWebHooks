@@ -15,7 +15,8 @@ namespace Microsoft.Extensions.DependencyInjection
 
             XsollaServiceCollectionSetup.AddXsollaServices(services);
 
-            return services.AddWebHooks();
+            return services
+                .AddWebHooks();
         }
     }
 }
