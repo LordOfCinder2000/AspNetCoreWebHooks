@@ -212,12 +212,7 @@ namespace Microsoft.AspNetCore.WebHooks.Filters
                 signatureHeaderName,
                 ReceiverName);
 
-            return new BadRequestObjectResult(
-                new XsollaErrorResponse
-                {
-                    Error = new XsollaError(nameof(XsollaConstants.ErrorCodes.INVALID_SIGNATURE))
-                }
-            );
+            return new BadRequestObjectResult(new XsollaErrorResponse(XsollaErrorCodeType.INVALID_SIGNATURE));
         }
     }
 }

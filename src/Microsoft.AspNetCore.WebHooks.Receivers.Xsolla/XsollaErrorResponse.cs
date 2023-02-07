@@ -9,5 +9,10 @@ namespace Microsoft.AspNetCore.WebHooks
     {
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public XsollaError Error { get; set; }
+
+        public XsollaErrorResponse(XsollaErrorCodeType code)
+        {
+            Error = new XsollaError(code);
+        }
     }
 }

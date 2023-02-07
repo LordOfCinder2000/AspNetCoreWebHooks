@@ -15,19 +15,19 @@ namespace Microsoft.AspNetCore.WebHooks
         public static string SignatureHeaderName => "Authorization";
 
         public static string EventBodyPropertyPath => "$.notification_type";
+    }
 
-        public static class ErrorCodes
-        {
-            public static string INVALID_USER = Resources.Invalid_User;
+    public enum XsollaErrorCodeType
+    {
+        INVALID_PARAMETER = 1,
 
-            public static string INVALID_PARAMETER = Resources.Invalid_Parameter;
+        INVALID_USER,
 
-            public static string INVALID_SIGNATURE = Resources.Invalid_Signature;
+        INVALID_SIGNATURE,
 
-            public static string INCORRECT_AMOUNT = Resources.Incorrect_Amount;
+        INCORRECT_AMOUNT,
 
-            public static string INCORRECT_INVOICE = Resources.Incorrect_Invoice;
-        }
+        INCORRECT_INVOICE,
     }
 }
 

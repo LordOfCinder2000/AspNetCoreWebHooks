@@ -1,6 +1,9 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.AspNetCore.WebHooks.Properties;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 
 namespace Microsoft.AspNetCore.WebHooks
@@ -8,23 +11,29 @@ namespace Microsoft.AspNetCore.WebHooks
     [JsonObject(Title = "error")]
     public class XsollaError
     {
-        private string _code;
+        private XsollaErrorCodeType _code;
 
         private string _message;
 
-        public XsollaError(string code)
+        public XsollaError(XsollaErrorCodeType code)
         {
-            if (code == null)
+            if (!Enum.IsDefined(typeof(XsollaErrorCodeType), code))
             {
-                throw new ArgumentNullException(nameof(code));
+                var message = string.Format(
+                     CultureInfo.CurrentCulture,
+                     Resources.General_InvalidEnumValue,
+                     typeof(XsollaErrorCodeType),
+                     code);
+                throw new ArgumentException(message, nameof(code));
             }
 
-            _code = code.ToUpperInvariant();
+            _code = code;
             _message = GetMessageByCode(code);
         }
 
         [JsonProperty("code")]
-        public string Code
+        [JsonConverter(typeof(StringEnumConverter))]
+        public XsollaErrorCodeType Code
         {
             get
             {
@@ -32,11 +41,17 @@ namespace Microsoft.AspNetCore.WebHooks
             }
             set
             {
-                if (value == null)
+                if (Enum.IsDefined(typeof(XsollaErrorCodeType), value))
                 {
-                    throw new ArgumentNullException(nameof(value));
+                    var message = string.Format(
+                         CultureInfo.CurrentCulture,
+                         Resources.General_InvalidEnumValue,
+                         typeof(XsollaErrorCodeType),
+                         value);
+                    throw new ArgumentException(message, nameof(value));
                 }
-                _code = value.ToUpperInvariant();
+
+                _code = value;
             }
         }
 
@@ -57,20 +72,25 @@ namespace Microsoft.AspNetCore.WebHooks
             }
         }
 
-        private static string GetMessageByCode(string code)
+        private static string GetMessageByCode(XsollaErrorCodeType code)
         {
             switch (code)
             {
-                case nameof(XsollaConstants.ErrorCodes.INVALID_USER):
-                    return XsollaConstants.ErrorCodes.INVALID_USER;
-                case nameof(XsollaConstants.ErrorCodes.INVALID_PARAMETER):
-                    return XsollaConstants.ErrorCodes.INVALID_PARAMETER;
-                case nameof(XsollaConstants.ErrorCodes.INVALID_SIGNATURE):
-                    return XsollaConstants.ErrorCodes.INVALID_SIGNATURE;
-                case nameof(XsollaConstants.ErrorCodes.INCORRECT_AMOUNT):
-                    return XsollaConstants.ErrorCodes.INCORRECT_AMOUNT;
-                case nameof(XsollaConstants.ErrorCodes.INCORRECT_INVOICE):
-                    return XsollaConstants.ErrorCodes.INCORRECT_INVOICE;
+                case XsollaErrorCodeType.INVALID_USER:
+                    return Resources.Invalid_User;
+
+                case XsollaErrorCodeType.INVALID_PARAMETER:
+                    return Resources.Invalid_Parameter;
+
+                case XsollaErrorCodeType.INVALID_SIGNATURE:
+                    return Resources.Invalid_Signature;
+
+                case XsollaErrorCodeType.INCORRECT_AMOUNT:
+                    return Resources.Incorrect_Amount;
+
+                case XsollaErrorCodeType.INCORRECT_INVOICE:
+                    return Resources.Incorrect_Invoice;
+
                 default:
                     return "Unknown error code";
             }

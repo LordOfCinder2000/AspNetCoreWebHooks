@@ -70,7 +70,16 @@ namespace Microsoft.AspNetCore.WebHooks.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Incorrect amount.
+        ///   Looks up a localized string similar to Enum type &apos;{0}&apos; has no defined &apos;{1}&apos; value..
+        /// </summary>
+        internal static string General_InvalidEnumValue {
+            get {
+                return ResourceManager.GetString("General_InvalidEnumValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incorrect amount..
         /// </summary>
         internal static string Incorrect_Amount {
             get {
@@ -79,7 +88,7 @@ namespace Microsoft.AspNetCore.WebHooks.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Incorrect invoice.
+        ///   Looks up a localized string similar to Incorrect invoice..
         /// </summary>
         internal static string Incorrect_Invoice {
             get {
@@ -88,7 +97,7 @@ namespace Microsoft.AspNetCore.WebHooks.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid parameter.
+        ///   Looks up a localized string similar to Invalid parameter..
         /// </summary>
         internal static string Invalid_Parameter {
             get {
@@ -97,7 +106,7 @@ namespace Microsoft.AspNetCore.WebHooks.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid signature.
+        ///   Looks up a localized string similar to Invalid signature..
         /// </summary>
         internal static string Invalid_Signature {
             get {
@@ -106,7 +115,7 @@ namespace Microsoft.AspNetCore.WebHooks.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid user.
+        ///   Looks up a localized string similar to Invalid user..
         /// </summary>
         internal static string Invalid_User {
             get {

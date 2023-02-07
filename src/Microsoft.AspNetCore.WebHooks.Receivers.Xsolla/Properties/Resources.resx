@@ -120,20 +120,23 @@
   <data name="General_ArgumentCannotBeNullOrEmpty" xml:space="preserve">
     <value>Value cannot be null or empty.</value>
   </data>
+  <data name="General_InvalidEnumValue" xml:space="preserve">
+    <value>Enum type '{0}' has no defined '{1}' value.</value>
+  </data>
   <data name="Incorrect_Amount" xml:space="preserve">
-    <value>Incorrect amount</value>
+    <value>Incorrect amount.</value>
   </data>
   <data name="Incorrect_Invoice" xml:space="preserve">
-    <value>Incorrect invoice</value>
+    <value>Incorrect invoice.</value>
   </data>
   <data name="Invalid_Parameter" xml:space="preserve">
-    <value>Invalid parameter</value>
+    <value>Invalid parameter.</value>
   </data>
   <data name="Invalid_Signature" xml:space="preserve">
-    <value>Invalid signature</value>
+    <value>Invalid signature.</value>
   </data>
   <data name="Invalid_User" xml:space="preserve">
-    <value>Invalid user</value>
+    <value>Invalid user.</value>
   </data>
   <data name="SignatureFilter_BadHeaderValue" xml:space="preserve">
     <value>Invalid '{0}' header value. Expecting a value of '{1}={2}'.</value>
