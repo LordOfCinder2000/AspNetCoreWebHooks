@@ -19,7 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.WebHoo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{52C69EAB-EB98-4ED2-9E40-DA75A2352C26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AspNetCore.WebHooks.Receivers.Xsolla.Test", "test\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla.Test\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla.Test.csproj", "{7087DD07-C9B6-4141-A327-BCDEB2AECB58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.WebHooks.Receivers.Xsolla.Test", "test\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla.Test\Microsoft.AspNetCore.WebHooks.Receivers.Xsolla.Test.csproj", "{7087DD07-C9B6-4141-A327-BCDEB2AECB58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AspNetCore.WebHooks.Receivers.AntMedia", "src\Microsoft.AspNetCore.WebHooks.Receivers.AntMedia\Microsoft.AspNetCore.WebHooks.Receivers.AntMedia.csproj", "{47DF6DB5-9DA0-4D26-9302-DD6CF948038E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AspNetCore.WebHooks.Receivers.AntMedia.Test", "test\Microsoft.AspNetCore.WebHooks.Receivers.AntMedia.Test\Microsoft.AspNetCore.WebHooks.Receivers.AntMedia.Test.csproj", "{4E81FB0F-3C5E-44E9-B3E3-0B9D6DE9EAB0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{7087DD07-C9B6-4141-A327-BCDEB2AECB58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7087DD07-C9B6-4141-A327-BCDEB2AECB58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7087DD07-C9B6-4141-A327-BCDEB2AECB58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47DF6DB5-9DA0-4D26-9302-DD6CF948038E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47DF6DB5-9DA0-4D26-9302-DD6CF948038E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47DF6DB5-9DA0-4D26-9302-DD6CF948038E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47DF6DB5-9DA0-4D26-9302-DD6CF948038E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E81FB0F-3C5E-44E9-B3E3-0B9D6DE9EAB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E81FB0F-3C5E-44E9-B3E3-0B9D6DE9EAB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E81FB0F-3C5E-44E9-B3E3-0B9D6DE9EAB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E81FB0F-3C5E-44E9-B3E3-0B9D6DE9EAB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +61,8 @@ Global
 		{F56E65DD-11BF-4B89-A9BD-B2CCDBE12240} = {CCD4AC3C-ECBF-4FBF-9811-770DA0A3CAD8}
 		{B656799F-716F-4AF4-8A96-CF30DFDECFA7} = {F67820BF-6F51-46BB-86F1-7E090897EC58}
 		{7087DD07-C9B6-4141-A327-BCDEB2AECB58} = {52C69EAB-EB98-4ED2-9E40-DA75A2352C26}
+		{47DF6DB5-9DA0-4D26-9302-DD6CF948038E} = {F67820BF-6F51-46BB-86F1-7E090897EC58}
+		{4E81FB0F-3C5E-44E9-B3E3-0B9D6DE9EAB0} = {52C69EAB-EB98-4ED2-9E40-DA75A2352C26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DFA2C475-42ED-4642-AB9C-09663AE71DA6}

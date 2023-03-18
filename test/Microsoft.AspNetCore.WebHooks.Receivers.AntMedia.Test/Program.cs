@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Microsoft.AspNetCore.WebHooks.Receivers.Xsolla.Test;
+namespace Microsoft.AspNetCore.WebHooks.Receivers.AntMedia.Test;
 
 public class Program
 {
@@ -11,7 +11,7 @@ public class Program
         // Add services to the container.
 
         //builder.Services.AddControllers();
-        builder.Services.AddMvc().AddNewtonsoftJson().AddXsollaWebHooks();
+        builder.Services.AddMvc().AddNewtonsoftJson().AddAntMediaWebHooks();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         //builder.Services.AddEndpointsApiExplorer();
         //builder.Services.AddSwaggerGen();
